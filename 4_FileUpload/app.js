@@ -14,7 +14,7 @@ app.use(
 
 cloudinaryConnect(); 
 
-import upload from "./routes/fileupload.route.js";
+import upload from "./routes/fileupload.routes.js";
 
 app.use("/api/v1/upload", upload);
 

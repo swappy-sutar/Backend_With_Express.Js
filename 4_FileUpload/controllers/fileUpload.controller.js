@@ -40,11 +40,10 @@ function isFileSupported(type, supportedTypes) {
   return supportedTypes.includes(type);
 }
 
-async function uploadFileToCloudinary(file, folder,quality) {
+const uploadFileToCloudinary = async (file, folder,quality) => {
   const options = { folder,
     resource_type: "auto",
    };
-
 
   try {
     if (!fs.existsSync(file.tempFilePath)) {

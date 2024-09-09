@@ -5,6 +5,7 @@ import {
   videoUpload,
   imageReducer,
 } from "../controllers/fileUpload.controller.js";
+// import {uploadFileToCloudinary} from "../middlewares/fileUpload.middleware.js"
 
 const router = express.Router()
 
